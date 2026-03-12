@@ -1,6 +1,6 @@
 .footer {
-  background: #070707;
-  border-top: 1px solid #1a1a1a;
+  background: color-mix(in srgb, #ffffff 72%, var(--color-bg));
+  border-top: 1px solid color-mix(in srgb, var(--color-slate) 30%, transparent);
   padding: 2rem 0;
 }
 
@@ -13,14 +13,14 @@
 }
 
 .footer__name {
-  font-family: 'Georgia', serif;
-  color: #c4a265;
+  font-family: 'Manrope', 'Inter', sans-serif;
+  color: var(--color-plum);
   font-size: 0.9rem;
   letter-spacing: 0.05em;
 }
 
 .footer__copy {
   font-size: 0.8rem;
-  color: #555;
+  color: var(--color-slate);
   letter-spacing: 0.03em;
 }

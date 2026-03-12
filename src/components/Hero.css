@@ -4,28 +4,66 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1208 50%, #0d0d0d 100%);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 45%, #f9faf6 100%);
   overflow: hidden;
+}
+
+.hero__video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero__video-player,
+.hero__video-player iframe {
+  width: 177.78vh;
+  min-width: 100%;
+  height: 56.25vw;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.58;
+  filter: saturate(1.2) contrast(1.08);
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(180, 140, 60, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(180, 140, 60, 0.05) 0%, transparent 50%);
+    radial-gradient(ellipse at 20% 50%, color-mix(in srgb, var(--color-plum) 14%, transparent) 0%, transparent 62%),
+    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--color-slate) 24%, transparent) 0%, transparent 54%);
+}
+
+.hero__loop-transition {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 35%, color-mix(in srgb, #ffffff 42%, transparent) 100%);
+  animation: videoLoopFade 14s ease-in-out infinite;
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #ffffff 40%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg) 50%, transparent) 45%,
+    color-mix(in srgb, var(--color-bg) 68%, transparent) 100%
+  );
 }
 
 .hero__content {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   text-align: center;
   padding: 0 1.5rem;
   max-width: 800px;
@@ -35,16 +73,16 @@
   font-size: 0.8rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #c4a265;
+  color: var(--color-plum);
   margin-bottom: 1.25rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hero__name {
-  font-family: 'Georgia', serif;
+  font-family: 'Manrope', 'Inter', sans-serif;
   font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 400;
-  color: #f0e6d0;
+  font-weight: 700;
+  color: #1f2730;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
@@ -52,7 +90,7 @@
 
 .hero__tagline {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: #aaa;
+  color: color-mix(in srgb, var(--color-slate) 82%, #23303a);
   line-height: 1.7;
   margin-bottom: 2.5rem;
 }
@@ -77,24 +115,24 @@
 }
 
 .btn--primary {
-  background: #c4a265;
-  color: #0a0a0a;
-  border: 2px solid #c4a265;
+  background: var(--color-plum);
+  color: #f8f8f8;
+  border: 2px solid var(--color-plum);
 }
 
 .btn--primary:hover {
-  background: #d4b27a;
-  border-color: #d4b27a;
+  background: color-mix(in srgb, var(--color-plum) 84%, white);
+  border-color: color-mix(in srgb, var(--color-plum) 84%, white);
 }
 
 .btn--outline {
   background: transparent;
-  color: #c4a265;
-  border: 2px solid #c4a265;
+  color: var(--color-rust);
+  border: 2px solid var(--color-rust);
 }
 
 .btn--outline:hover {
-  background: rgba(196, 162, 101, 0.1);
+  background: color-mix(in srgb, var(--color-rust) 14%, transparent);
 }
 
 .hero__scroll-hint {
@@ -106,24 +144,31 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  z-index: 2;
+  z-index: 4;
 }
 
 .hero__scroll-hint span {
   font-size: 0.65rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: #666;
+  color: var(--color-slate);
 }
 
 .hero__scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, #666, transparent);
+  background: linear-gradient(to bottom, var(--color-slate), transparent);
   animation: scrollPulse 2s ease infinite;
 }
 
 @keyframes scrollPulse {
   0%, 100% { opacity: 0.3; transform: scaleY(1); }
   50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+@keyframes videoLoopFade {
+  0%, 84% { opacity: 0; }
+  90% { opacity: 0.22; }
+  96% { opacity: 0.34; }
+  100% { opacity: 0; }
 }

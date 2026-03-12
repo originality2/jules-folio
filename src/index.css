@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --color-bg: #E0E2DB;
+  --color-surface: #F5F6F2;
+  --color-moss: #5C6A4D;
+  --color-slate: #6B7A86;
+  --color-plum: #A80874;
+  --color-rust: #AB3428;
+  --color-text: #253039;
 }
 
 html {
@@ -9,15 +21,16 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-  background: #0a0a0a;
-  color: #ccc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-weight: 400;
+  font-family: 'Manrope', 'Inter', sans-serif;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -35,11 +48,11 @@ a {
 }
 
 ::selection {
-  background: rgba(196, 162, 101, 0.3);
-  color: #f0e6d0;
+  background: color-mix(in srgb, var(--color-plum) 28%, transparent);
+  color: #1f252b;
 }
 
 :focus-visible {
-  outline: 2px solid #c4a265;
+  outline: 2px solid var(--color-plum);
   outline-offset: 3px;
 }
