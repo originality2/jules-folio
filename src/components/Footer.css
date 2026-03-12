@@ -1,0 +1,26 @@
+.footer {
+  background: #070707;
+  border-top: 1px solid #1a1a1a;
+  padding: 2rem 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer__name {
+  font-family: 'Georgia', serif;
+  color: #c4a265;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.footer__copy {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.03em;
+}
