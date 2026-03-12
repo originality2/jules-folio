@@ -1,0 +1,126 @@
+.film-work {
+  background: #0a0a0a;
+}
+
+.film-work__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.film-card {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-card:hover {
+  border-color: #c4a265;
+  transform: translateY(-4px);
+}
+
+.film-card__thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #1a1208 0%, #0d0d0d 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.75rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.film-card__thumb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, color-mix(in srgb, var(--accent) 12%, transparent), transparent 70%);
+}
+
+.film-card__type-badge {
+  position: relative;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+}
+
+.film-card__body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-card__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.film-card__year,
+.film-card__duration {
+  font-size: 0.75rem;
+  color: #666;
+  letter-spacing: 0.05em;
+}
+
+.film-card__title {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #e8d5b0;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.film-card__desc {
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.film-card__awards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #1e1e1e;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.film-card__award {
+  font-size: 0.75rem;
+  color: #888;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.film-card__award-icon {
+  color: #c4a265;
+  flex-shrink: 0;
+  font-size: 0.65rem;
+  margin-top: 0.1rem;
+}
+
+@media (max-width: 1024px) {
+  .film-work__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .film-work__grid {
+    grid-template-columns: 1fr;
+  }
+}
