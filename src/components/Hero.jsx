@@ -28,7 +28,7 @@ export default function Hero() {
           Building communities that engage.
         </p>
         <div className="hero__cta">
-          <a href="#film-work" className="btn btn--primary">View Film Work</a>
+          <a href="#work" className="btn btn--primary">View Work</a>
           <a href="#contact" className="btn btn--outline">Get In Touch</a>
         </div>
       </div>
