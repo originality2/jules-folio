@@ -1,18 +1,22 @@
+import { useState } from 'react';
 import './Hero.css';
 
 export default function Hero() {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
   return (
     <section id="top" className="hero">
       <div className="hero__video-wrap" aria-hidden="true">
+        <div className={`hero__video-poster${isVideoPlaying ? ' hero__video-poster--hidden' : ''}`} />
         <video
           className="hero__video-element"
           src="/img/hero.mp4"
-          poster="/img/hero.jpg"
           autoPlay
           muted
           loop
           playsInline
           preload="auto"
+          onPlay={() => setIsVideoPlaying(true)}
         />
       </div>
       <div className="hero__overlay" />
