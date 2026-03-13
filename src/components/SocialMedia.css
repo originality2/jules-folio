@@ -1,5 +1,5 @@
 .social-media {
-  background: color-mix(in srgb, var(--color-bg) 76%, var(--color-surface));
+  background: linear-gradient(var(--color-bg), color-mix(in srgb, var(--color-bg) 40%, var(--color-surface)), var(--color-bg));
 }
 
 .social-media__services {
@@ -18,13 +18,13 @@
 }
 
 .service-card:hover {
-  border-color: var(--color-moss);
+  border-color: var(--color-mustard);
 }
 
 .service-card__icon {
   display: block;
   font-size: 1.5rem;
-  color: var(--color-moss);
+  color: var(--color-mustard);
   margin-bottom: 1rem;
 }
 
@@ -45,7 +45,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-moss);
+  color: var(--color-mustard);
   margin-bottom: 1.5rem;
   font-weight: 400;
 }
@@ -65,7 +65,7 @@
 }
 
 .case-card:hover {
-  border-color: var(--color-moss);
+  border-color: var(--color-mustard);
 }
 
 .case-card__header {
@@ -92,12 +92,12 @@
 
 .case-card__platform {
   font-size: 0.7rem;
-  color: var(--color-moss);
+  color: var(--color-mustard);
   letter-spacing: 0.08em;
   text-align: right;
   white-space: nowrap;
   padding: 0.3rem 0.6rem;
-  border: 1px solid color-mix(in srgb, var(--color-moss) 35%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-mustard) 35%, transparent);
   border-radius: 2px;
   flex-shrink: 0;
 }

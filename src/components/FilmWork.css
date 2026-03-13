@@ -1,5 +1,5 @@
 .film-work {
-  background: color-mix(in srgb, var(--color-bg) 86%, var(--color-surface));
+  background: linear-gradient(var(--color-bg), color-mix(in srgb, var(--color-bg) 40%, var(--color-accent)), var(--color-bg));
 }
 
 .film-work__grid {
@@ -9,7 +9,7 @@
 }
 
 .film-card {
-  background: color-mix(in srgb, var(--color-surface) 74%, var(--color-bg));
+  background: color-mix(in srgb, var(--color-bg) 74%, var(--color-accent));
   border: 1px solid color-mix(in srgb, var(--color-slate) 28%, transparent);
   border-radius: 4px;
   overflow: hidden;
@@ -19,14 +19,14 @@
 }
 
 .film-card:hover {
-  border-color: var(--color-moss);
+  border-color: var(--color-mustard);
   transform: translateY(-4px);
 }
 
 .film-card__thumb {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, color-mix(in srgb, var(--color-surface) 90%, #2a0d17) 0%, color-mix(in srgb, var(--color-bg) 92%, var(--color-surface)) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-accent) 90%, #2a0d17) 0%, color-mix(in srgb, var(--color-bg) 92%, var(--color-accent)) 100%);
   display: flex;
   align-items: flex-end;
   padding: 0.75rem;
@@ -107,7 +107,7 @@
 }
 
 .film-card__award-icon {
-  color: var(--color-moss);
+  color: var(--color-mustard);
   flex-shrink: 0;
   font-size: 0.65rem;
   margin-top: 0.1rem;

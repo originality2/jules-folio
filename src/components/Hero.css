@@ -51,7 +51,7 @@
   z-index: 1;
   background-image:
     radial-gradient(ellipse at 20% 50%, color-mix(in srgb, var(--color-plum) 24%, transparent) 0%, transparent 62%),
-    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--color-moss) 24%, transparent) 0%, transparent 54%);
+    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--color-mustard) 24%, transparent) 0%, transparent 54%);
 }
 
 .hero__overlay {
@@ -87,7 +87,7 @@
   font-family: 'Uncial Antiqua', 'Manrope', serif;
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
-  color: var(--color-moss);
+  color: var(--color-mustard);
   line-height: 1.1;
   margin-bottom: 1.5rem;
   letter-spacing: 0.02em;
@@ -132,12 +132,12 @@
 
 .btn--outline {
   background: transparent;
-  color: var(--color-moss);
-  border: 2px solid var(--color-moss);
+  color: var(--color-mustard);
+  border: 2px solid var(--color-mustard);
 }
 
 .btn--outline:hover {
-  background: color-mix(in srgb, var(--color-moss) 18%, transparent);
+  background: color-mix(in srgb, var(--color-mustard) 18%, transparent);
 }
 
 .hero__scroll-hint {

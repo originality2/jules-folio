@@ -1,5 +1,5 @@
 .about {
-  background: color-mix(in srgb, var(--color-bg) 74%, var(--color-surface));
+  background: linear-gradient(var(--color-bg), color-mix(in srgb, var(--color-bg) 40%, var(--color-surface)), var(--color-bg));
 }
 
 .about__grid {
@@ -52,7 +52,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-moss);
+  color: var(--color-mustard);
   margin-bottom: 1rem;
   font-weight: 400;
 }
@@ -77,8 +77,8 @@
 }
 
 .about__skill-tag:hover {
-  border-color: var(--color-moss);
-  color: var(--color-moss);
+  border-color: var(--color-mustard);
+  color: var(--color-mustard);
 }
 
 @media (max-width: 768px) {
