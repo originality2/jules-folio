@@ -38,6 +38,6 @@ fi
 S3_URI="s3://${S3_BUCKET}"
 
 echo "Syncing dist/ to ${S3_URI}..."
-aws s3 sync dist/ "$S3_URI" --delete
+aws s3 sync dist/ "$S3_URI" --delete --exclude "img/*"
 
 echo "Deployment complete."
