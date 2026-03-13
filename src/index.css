@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&family=Uncial+Antiqua&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,13 +7,13 @@
 }
 
 :root {
-  --color-bg: #E0E2DB;
-  --color-surface: #F5F6F2;
-  --color-moss: #5C6A4D;
-  --color-slate: #6B7A86;
-  --color-plum: #A80874;
-  --color-rust: #AB3428;
-  --color-text: #253039;
+  --color-bg: #1B0B12;
+  --color-surface: #5C0A1D;
+  --color-moss: #C6A15B;
+  --color-slate: #F1D7D9;
+  --color-plum: #D6336C;
+  --color-rust: #8B0F2B;
+  --color-text: #F1D7D9;
 }
 
 html {
@@ -49,7 +49,7 @@ a {
 
 ::selection {
   background: color-mix(in srgb, var(--color-plum) 28%, transparent);
-  color: #1f252b;
+  color: #fff3f4;
 }
 
 :focus-visible {

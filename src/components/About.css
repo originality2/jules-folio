@@ -1,5 +1,5 @@
 .about {
-  background: color-mix(in srgb, #ffffff 60%, var(--color-bg));
+  background: color-mix(in srgb, var(--color-bg) 74%, var(--color-surface));
 }
 
 .about__grid {
@@ -17,7 +17,7 @@
 .about__image-placeholder {
   width: 100%;
   aspect-ratio: 3 / 4;
-  background: linear-gradient(160deg, #ffffff 0%, color-mix(in srgb, var(--color-bg) 88%, #ffffff) 100%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--color-surface) 86%, #1f0d14) 0%, color-mix(in srgb, var(--color-bg) 82%, var(--color-surface)) 100%);
   border: 1px solid color-mix(in srgb, var(--color-slate) 28%, transparent);
   border-radius: 4px;
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 .about__bio {
-  color: color-mix(in srgb, var(--color-slate) 86%, #253039);
+  color: color-mix(in srgb, var(--color-slate) 82%, #5c2f3e);
   font-size: 1.0625rem;
   line-height: 1.8;
   margin-bottom: 1.25rem;
@@ -52,7 +52,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-rust);
+  color: var(--color-moss);
   margin-bottom: 1rem;
   font-weight: 400;
 }
@@ -77,8 +77,8 @@
 }
 
 .about__skill-tag:hover {
-  border-color: var(--color-plum);
-  color: var(--color-plum);
+  border-color: var(--color-moss);
+  color: var(--color-moss);
 }
 
 @media (max-width: 768px) {

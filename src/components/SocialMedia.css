@@ -1,5 +1,5 @@
 .social-media {
-  background: color-mix(in srgb, #ffffff 60%, var(--color-bg));
+  background: color-mix(in srgb, var(--color-bg) 76%, var(--color-surface));
 }
 
 .social-media__services {
@@ -10,7 +10,7 @@
 }
 
 .service-card {
-  background: #ffffff;
+  background: color-mix(in srgb, var(--color-surface) 74%, var(--color-bg));
   border: 1px solid color-mix(in srgb, var(--color-slate) 28%, transparent);
   border-radius: 4px;
   padding: 1.5rem;
@@ -18,26 +18,26 @@
 }
 
 .service-card:hover {
-  border-color: var(--color-plum);
+  border-color: var(--color-moss);
 }
 
 .service-card__icon {
   display: block;
   font-size: 1.5rem;
-  color: var(--color-rust);
+  color: var(--color-moss);
   margin-bottom: 1rem;
 }
 
 .service-card__title {
   font-size: 0.9375rem;
-  color: var(--color-text);
+  color: var(--color-slate);
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .service-card__desc {
   font-size: 0.8125rem;
-  color: color-mix(in srgb, var(--color-slate) 84%, #253039);
+  color: color-mix(in srgb, var(--color-slate) 82%, #6e3a4c);
   line-height: 1.7;
 }
 
@@ -45,7 +45,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-rust);
+  color: var(--color-moss);
   margin-bottom: 1.5rem;
   font-weight: 400;
 }
@@ -57,7 +57,7 @@
 }
 
 .case-card {
-  background: #ffffff;
+  background: color-mix(in srgb, var(--color-surface) 74%, var(--color-bg));
   border: 1px solid color-mix(in srgb, var(--color-slate) 28%, transparent);
   border-radius: 4px;
   padding: 1.75rem;
@@ -65,7 +65,7 @@
 }
 
 .case-card:hover {
-  border-color: var(--color-plum);
+  border-color: var(--color-moss);
 }
 
 .case-card__header {
@@ -80,7 +80,7 @@
   font-family: 'Manrope', 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--color-slate);
   margin-bottom: 0.2rem;
 }
 
@@ -92,19 +92,19 @@
 
 .case-card__platform {
   font-size: 0.7rem;
-  color: var(--color-plum);
+  color: var(--color-moss);
   letter-spacing: 0.08em;
   text-align: right;
   white-space: nowrap;
   padding: 0.3rem 0.6rem;
-  border: 1px solid color-mix(in srgb, var(--color-plum) 35%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-moss) 35%, transparent);
   border-radius: 2px;
   flex-shrink: 0;
 }
 
 .case-card__desc {
   font-size: 0.8375rem;
-  color: color-mix(in srgb, var(--color-slate) 84%, #253039);
+  color: color-mix(in srgb, var(--color-slate) 82%, #6e3a4c);
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -127,7 +127,7 @@
 .case-card__metric {
   font-family: 'Manrope', 'Inter', sans-serif;
   font-size: 1.3rem;
-  color: var(--color-rust);
+  color: var(--color-plum);
 }
 
 .case-card__result-label {

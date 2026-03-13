@@ -1,5 +1,5 @@
 .contact {
-  background: color-mix(in srgb, #ffffff 30%, var(--color-bg));
+  background: color-mix(in srgb, var(--color-bg) 88%, var(--color-surface));
 }
 
 .contact__inner {
@@ -10,7 +10,7 @@
 }
 
 .contact__desc {
-  color: color-mix(in srgb, var(--color-slate) 84%, #253039);
+  color: color-mix(in srgb, var(--color-slate) 82%, #6e3a4c);
   font-size: 1.0625rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
@@ -26,7 +26,7 @@
 }
 
 .contact__status {
-  color: var(--color-rust);
+  color: var(--color-moss);
   font-size: 0.6rem;
   animation: pulse 2.5s ease infinite;
 }
@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: #ffffff;
+  background: color-mix(in srgb, var(--color-surface) 74%, var(--color-bg));
   border: 1px solid color-mix(in srgb, var(--color-slate) 28%, transparent);
   border-radius: 4px;
   padding: 1.25rem 1.5rem;
@@ -55,13 +55,13 @@
 }
 
 .contact__link:hover {
-  border-color: var(--color-plum);
-  background: color-mix(in srgb, var(--color-plum) 8%, transparent);
+  border-color: var(--color-moss);
+  background: color-mix(in srgb, var(--color-moss) 10%, transparent);
 }
 
 .contact__link-icon {
   font-size: 1.25rem;
-  color: var(--color-rust);
+  color: var(--color-moss);
   width: 1.5rem;
   text-align: center;
   flex-shrink: 0;
@@ -88,7 +88,7 @@
 }
 
 .contact__link:hover .contact__link-arrow {
-  color: var(--color-plum);
+  color: var(--color-moss);
   transform: translateX(4px);
 }
 

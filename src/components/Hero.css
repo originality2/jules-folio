@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 45%, #f9faf6 100%);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 48%, #2b0d17 100%);
   overflow: hidden;
 }
 
@@ -36,8 +36,8 @@
   inset: 0;
   z-index: 1;
   background-image:
-    radial-gradient(ellipse at 20% 50%, color-mix(in srgb, var(--color-plum) 14%, transparent) 0%, transparent 62%),
-    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--color-slate) 24%, transparent) 0%, transparent 54%);
+    radial-gradient(ellipse at 20% 50%, color-mix(in srgb, var(--color-plum) 24%, transparent) 0%, transparent 62%),
+    radial-gradient(ellipse at 80% 20%, color-mix(in srgb, var(--color-moss) 24%, transparent) 0%, transparent 54%);
 }
 
 .hero__overlay {
@@ -46,9 +46,9 @@
   z-index: 2;
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, #ffffff 40%, transparent) 0%,
-    color-mix(in srgb, var(--color-bg) 50%, transparent) 45%,
-    color-mix(in srgb, var(--color-bg) 68%, transparent) 100%
+    color-mix(in srgb, var(--color-bg) 22%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg) 55%, transparent) 45%,
+    color-mix(in srgb, var(--color-bg) 80%, transparent) 100%
   );
 }
 
@@ -70,18 +70,18 @@
 }
 
 .hero__name {
-  font-family: 'Manrope', 'Inter', sans-serif;
+  font-family: 'Uncial Antiqua', 'Manrope', serif;
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
-  color: #1f2730;
+  color: var(--color-moss);
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
 }
 
 .hero__tagline {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: color-mix(in srgb, var(--color-slate) 82%, #23303a);
+  color: color-mix(in srgb, var(--color-slate) 88%, #5e3040);
   line-height: 1.7;
   margin-bottom: 2.5rem;
 }
@@ -107,23 +107,23 @@
 
 .btn--primary {
   background: var(--color-plum);
-  color: #f8f8f8;
+  color: #fff0f2;
   border: 2px solid var(--color-plum);
 }
 
 .btn--primary:hover {
-  background: color-mix(in srgb, var(--color-plum) 84%, white);
-  border-color: color-mix(in srgb, var(--color-plum) 84%, white);
+  background: color-mix(in srgb, var(--color-plum) 72%, #ff90b7);
+  border-color: color-mix(in srgb, var(--color-plum) 72%, #ff90b7);
 }
 
 .btn--outline {
   background: transparent;
-  color: var(--color-rust);
-  border: 2px solid var(--color-rust);
+  color: var(--color-moss);
+  border: 2px solid var(--color-moss);
 }
 
 .btn--outline:hover {
-  background: color-mix(in srgb, var(--color-rust) 14%, transparent);
+  background: color-mix(in srgb, var(--color-moss) 18%, transparent);
 }
 
 .hero__scroll-hint {

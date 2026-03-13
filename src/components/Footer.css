@@ -1,5 +1,5 @@
 .footer {
-  background: color-mix(in srgb, #ffffff 72%, var(--color-bg));
+  background: color-mix(in srgb, var(--color-bg) 82%, black);
   border-top: 1px solid color-mix(in srgb, var(--color-slate) 30%, transparent);
   padding: 2rem 0;
 }
@@ -14,7 +14,7 @@
 
 .footer__name {
   font-family: 'Manrope', 'Inter', sans-serif;
-  color: var(--color-plum);
+  color: var(--color-moss);
   font-size: 0.9rem;
   letter-spacing: 0.05em;
 }
