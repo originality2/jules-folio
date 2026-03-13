@@ -14,6 +14,7 @@
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
+  background: url('/img/hero.jpg') center / cover no-repeat;
 }
 
 .hero__video-element {
