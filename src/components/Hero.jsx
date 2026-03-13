@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="hero__overlay" />
       <div className="hero__content">
         <p className="hero__eyebrow">Filmmaker &amp; Social Media Manager</p>
-        <h1 className="hero__name">Jules Kostalova</h1>
+        <h1 className="hero__name" data-text="Jules">Jules</h1>
         <p className="hero__tagline">
           Crafting visual stories that resonate.<br />
           Building communities that engage.

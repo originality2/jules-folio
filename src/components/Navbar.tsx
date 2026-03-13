@@ -131,7 +131,7 @@ export default function Navbar() {
 
   return (
     <Nav $scrolled={scrolled}>
-      <a className="navbar__logo" href="#top">JK</a>
+      <a className="navbar__logo" href="#top">J</a>
       <button
         className={`navbar__hamburger${menuOpen ? ' open' : ''}`}
         onClick={() => setMenuOpen(!menuOpen)}

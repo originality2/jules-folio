@@ -22,7 +22,7 @@ export default function About() {
         <div className="about__grid">
           <div className="about__image-wrap">
             <div className="about__image-placeholder" aria-hidden="true">
-              <div className="about__image-initials">JK</div>
+              <div className="about__image-initials">J</div>
             </div>
           </div>
           <div className="about__text">
